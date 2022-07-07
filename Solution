@@ -1,0 +1,5 @@
+class Solution(object):
+    def average(self, salary):
+        n = len(salary)
+        avg_except_min_max = (sum(salary) - min(salary) - max(salary)) / float(n-2)
+        return float(avg_except_min_max)
